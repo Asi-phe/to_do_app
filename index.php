@@ -16,7 +16,7 @@ session_start();
 </head>
 <body>
 </form class="todo" >
-<h1>To do list</h1><hr>
+<h1>To do list</h1>
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"method="post">
 <input required type="text" name="item">
 <input type="submit" value="ADD">
