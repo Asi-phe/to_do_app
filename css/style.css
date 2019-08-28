@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: url('../images/bck.jpeg');
+     /*background-repeat: repeat-y;*/
+    background-image-display: inline-block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: 100%;
+    background-position: 50% 50%;
+     background-size:cover;
+     color:white;
+
+}
+h1{
+    align:center;
+}

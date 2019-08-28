@@ -1,15 +1,9 @@
 
 
-$(document).ready(
-  function(){
-      $('#button').click(
-          function(){
-              var toAdd = $('input[name=toDoEntry]').val();
-               $('ul').append('<li>' + toAdd + '</li>');
-          });
+
 
 $(document).ready(function(){
-    //craeting a variable called itemDone and initializing it to zero.
+    //creating a variable called itemDone and initializing it to zero.
   let itemDone = 0;
   $("li").click(function(){
       //if the variable is selected,let the line decoration strike through

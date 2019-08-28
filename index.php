@@ -1,5 +1,6 @@
 <?php
 session_start();
+//session_destroy();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,22 +8,41 @@ session_start();
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" type="text/css" href="css/style2.css">
-   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <title>To do list</title>
+   <!-- bootsrapp link -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
+   <title>to do App</title>
 </head>
 <body>
-       <h1>My to do list is as follows</h1>
-       <form action="index2.php" method="post">
-           <input type="text" name="todoEntry" >
-           <button type="submit" >Add</button>
-       </form>
-   <?php
-if($_POST){
-   echo "<br>"."\n<ul>\n<li>".$_POST['todoEntry']."</li>\n</ul>";
-}
-   ?>
-<script src="js/main.js"></script>
+</form class="todo" >
+<h1>To do list</h1><hr>
+<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"method="post">
+<input required type="text" name="item">
+<input type="submit" value="ADD">
+</form>
+
+<?php
+if(isset($_POST)){
+   $any = $_POST['item'];
+   if(isset($_SESSION['items'])){
+       //if isset have been set let the value of $_SESSION be equal to $any
+       $_SESSION['items'][] = $any;
+   }else{
+       // else let $_SESSION be equal to an empty array
+       $_SESSION['items'] = [];
+   }
+
+
+
+    echo "<ul>";
+    foreach($_SESSION['items'] as $item){
+        echo "<li>".$item."   "."</li><br>";
+    };
+    echo "</ul>";
+  }
+?>
 </body>
 </html>
+
+
