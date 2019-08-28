@@ -4,15 +4,18 @@ body{
     height:100%;
     width:100%;
     background-color: red; /* For browsers that do not support gradients */
-    background-image: url('../images/w.jpg');
-     /*background-repeat: repeat-y;*/
-    background-position: 50% 50%;
-     background-size:cover;
-     color:black;
-
+    background-image: linear-gradient(to right, red , blue); /* Standard syntax (must be last) */
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
 }
+
+
+
+
 h1{
-    margin:50px;
-    padding:50px;
+    margin:20px;
+    padding:10px;
     text-align:center;
+    font-family: 'Lexend Mega', sans-serif;
 }
