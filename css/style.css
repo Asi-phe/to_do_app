@@ -51,6 +51,9 @@ body {
     /**
      * Remove Button
      */
+     li{
+        list-style: none;
+     }
     #todo-list .remove {
         float:right;
         display:block;
@@ -81,6 +84,12 @@ body {
       position: absolute;
       margin-left: 50%;
       font-weight: 900;
+      font-size:300%;
+      size: 30%;
     }
+   
+   
+
+   
   
   
