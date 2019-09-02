@@ -75,3 +75,12 @@ body {
       border:purple;
 
   }
+  .heading{
+       
+      font-family: 'Caveat', cursive;
+      position: absolute;
+      margin-left: 50%;
+      font-weight: 900;
+    }
+  
+  

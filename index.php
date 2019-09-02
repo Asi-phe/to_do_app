@@ -21,11 +21,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link href="css/style.css" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
    <title>To do list</title>
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
-   <h1>To do list!</h1>
+   <h1 class=heading >To do list!</h1>
    <!-- Start Bootstrap Columns And Following Naming Convention To Align The Items In The Centre Of The Page -->
    <div class="text-center mt-5 container">
        <div class="row">
