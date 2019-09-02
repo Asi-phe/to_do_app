@@ -1,8 +1,11 @@
 body {
-    background-image: url("../images/horse.jpg");
-    
-    background-repeat: no-repeat;
-    font-family: 'Open Sans', sans-serif;
+  background-image: url("../images/horse.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 /**
 * To Do List
@@ -61,3 +64,14 @@ body {
         text-transform: lowercase;
         cursor: pointer;
     }
+
+    #button-addon2{
+        background-color: purple;
+        border:purple;
+    }
+
+  #DeleteB{
+      background-color: purple;
+      border:purple;
+
+  }

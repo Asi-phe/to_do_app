@@ -25,6 +25,7 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
+   <h1>To do list!</h1>
    <!-- Start Bootstrap Columns And Following Naming Convention To Align The Items In The Centre Of The Page -->
    <div class="text-center mt-5 container">
        <div class="row">
@@ -51,7 +52,7 @@
                                    // Displaying All The Items In A Div And In A Bootstrap Alert Box
                                    echo '<div class="alert alert-light border shadow-sm pb-4">';
                                    echo "<li>".$value['todo_item']."---".$value['todo_dates'].
-                                   '<a class="btn btn-danger float-right" href="index.php?to='. $key.'&action=delete">Delete</a>'."</li><br>";
+                                   '<a class="btn btn-danger float-right" id=DeleteB href="index.php?to='. $key.'&action=delete">Delete</a>'."</li><br>";
                                    echo '</div>';
                                }
                            }
