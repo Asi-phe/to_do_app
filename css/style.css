@@ -1,0 +1,63 @@
+body {
+    background-image: url("../images/horse.jpg");
+    
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+/**
+* To Do List
+*/
+#todo-list {
+    margin:0 0 30px;
+    padding:20px 25px;
+    background-color: rgb(0, 213, 241);
+}
+    #todo-list li {
+        clear:both;
+        padding:6px;
+        border-bottom:2px solid #DDD;
+        margin-top:3px;
+        margin-bottom:3px;
+    }
+    #todo-list li:first-child {
+        margin-top:0;
+    }
+    #todo-list li:last-child {
+        border-bottom:0;
+        margin-bottom:0;
+    }
+    #todo-list li:hover {
+        background-color:#FFF;
+    }
+    #todo-list li:after {
+        clear:both;
+        content:'';
+        display: table;
+   }
+   /**
+     * To do item
+     */
+    #todo-list span {
+        float:left;
+        margin-right:10px;
+        margin-top:-3px;
+        display: block;
+        line-height: 1.25;
+        max-width:90%;
+    }
+    /**
+     * Remove Button
+     */
+    #todo-list .remove {
+        float:right;
+        display:block;
+        color:burlywood;
+        border:1px solid #999;
+        border-radius: 30px;
+        padding:2px 5px 3px;
+        text-decoration: none;
+        font-size: 10px;
+        line-height: 1;
+        text-transform: lowercase;
+        cursor: pointer;
+    }
