@@ -83,9 +83,13 @@ body {
       font-family: 'Caveat', cursive;
       position: absolute;
       margin-left: 50%;
+      padding-top: auto;
       font-weight: 900;
       font-size:300%;
       size: 30%;
+    }
+#top{
+        padding-top: 10%;
     }
    
    
