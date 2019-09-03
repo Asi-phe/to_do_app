@@ -4,3 +4,5 @@ I used html and Bootstrap for the front end,I have added a heading using html an
 CSS
 I used it to style the html and Boostrap.
 I added the background image in my CSS. And all the sizing and positioning using css.
+I used JS for the strike through and to unstrike through item.
+I used php to store and delete items.
